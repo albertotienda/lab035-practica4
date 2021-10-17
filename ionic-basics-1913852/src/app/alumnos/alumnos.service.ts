@@ -61,7 +61,7 @@ export class AlumnosService {
   }
 
   borrarAlumno(idAlumno: string) {
-    this.alumnos.filter((alumno: Alumno) =>{
+    this.alumnos = this.alumnos.filter((alumno: Alumno) =>{
       return alumno.id != idAlumno;
     })
   }
